@@ -3,8 +3,8 @@ from fpdf import FPDF
 
 #inputs para pegar os valores digitados pelo usuário
 empresa = input('Informe a empresa: ')
-acesso = int(input('Quantos acessos?: '))
-visita = int(input('Quantas visitas?: '))
+acesso = (input('Quantos acessos?: '))
+visita = (input('Quantas visitas?: '))
 
 #condição para verficar se o usuário digitou número apenas
 if not acesso.isdigit() or not visita.isdigit():
