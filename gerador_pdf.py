@@ -6,6 +6,15 @@ empresa = input('Informe a empresa: ')
 acesso = int(input('Quantos acessos?: '))
 visita = int(input('Quantas visitas?: '))
 
+#condição para verficar se o usuário digitou número apenas
+if not acesso.isdigit() or not visita.isdigit():
+    print('Voce nao digitou nenhum valor válido, insira apenas número')
+    
+# se ele digitou números, então as variáveis recebe o tipo INT
+else:
+    acesso = int(acesso)
+    visita = int(visita)
+    
 #valores do serviços ja, pré definidos
 acesso_valor = 50
 visita_valor = 120
